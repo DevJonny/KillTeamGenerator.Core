@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace KTNameGenerator.Core
+namespace KTNameGenerator.Core.Model
 {
     public class Faction
     {

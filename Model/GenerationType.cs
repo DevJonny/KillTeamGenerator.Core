@@ -1,4 +1,4 @@
-namespace KTNameGenerator.Core
+namespace KTNameGenerator.Core.Model
 {
     public enum GenerationType
     {
