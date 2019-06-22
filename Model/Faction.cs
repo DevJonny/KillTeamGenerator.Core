@@ -8,6 +8,7 @@ namespace KTNameGenerator.Core.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public GenerationType GenerationType { get; set; }
+        public ConcatenationType ConcatenationType { get; set; }
         public SubFaction[] SubFactions { get; set; }
         public string[] Forenames { get; set; }
         public string[] Surnames { get; set; }
@@ -32,8 +33,11 @@ namespace KTNameGenerator.Core.Model
                 return $"{Forenames[Dice.D10]} {Surnames[Dice.D10]}";
             
             var subFaction = SubFactions[subFactionId.Value];
+            var forename = subFaction.Forenames[Dice.D10];
+            var concatenation = ConcatenationType is ConcatenationType.Combine ? string.Empty : " ";
+            var surname = subFaction.Surnames[Dice.D10];
 
-            return $"{subFaction.Forenames[Dice.D10]} {subFaction.Surnames[Dice.D10]}";
+            return $"{forename}{concatenation}{surname}";
         }
 
         private string generateD66Name(int? subFaction)
