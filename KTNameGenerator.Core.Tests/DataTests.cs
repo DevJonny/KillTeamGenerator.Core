@@ -22,6 +22,7 @@ namespace KTNameGenerator.Core.Tests
         public void Adeptus_Astartes_Has_Full_Data(string subFactionName)
         {
             var adeptusAstartes = KillTeam.FactionById(1);
+            adeptusAstartes.HasSubFactions.Should().BeTrue();
 
             AssertD10SubFaction(adeptusAstartes.SubFactions, subFactionName);
         }
@@ -30,6 +31,7 @@ namespace KTNameGenerator.Core.Tests
         public void Grey_Knights_Has_Full_Data()
         {
             var greyKnights = KillTeam.FactionById(2);
+            greyKnights.HasSubFactions.Should().BeFalse();
 
             AssertD10Faction(greyKnights);
         }
@@ -42,6 +44,7 @@ namespace KTNameGenerator.Core.Tests
         public void Astra_Militarum_Has_Full_Data(string subFactionName)
         {
             var astraMil = KillTeam.FactionById(3);
+            astraMil.HasSubFactions.Should().BeTrue();
 
             AssertD66SubFaction(astraMil.SubFactions, subFactionName);
 
@@ -64,6 +67,7 @@ namespace KTNameGenerator.Core.Tests
         public void Heretic_Astartes_Has_Full_Data(string subFactionName)
         {
             var hereticAstartes = KillTeam.FactionById(5);
+            hereticAstartes.HasSubFactions.Should().BeTrue();
             
             AssertD10SubFaction(hereticAstartes.SubFactions, subFactionName);
         }
@@ -72,6 +76,7 @@ namespace KTNameGenerator.Core.Tests
         public void Death_Guard_Has_Full_Data()
         {
             var deathGuard = KillTeam.FactionById(6);
+            deathGuard.HasSubFactions.Should().BeFalse();
             
             AssertD10Faction(deathGuard);
         }
@@ -80,6 +85,7 @@ namespace KTNameGenerator.Core.Tests
         public void Thousand_Sons_Has_Full_Data()
         {
             var thousandSons = KillTeam.FactionById(7);
+            thousandSons.HasSubFactions.Should().BeFalse();
             
             AssertD10Faction(thousandSons);
         }
@@ -90,6 +96,7 @@ namespace KTNameGenerator.Core.Tests
         public void Asuryani_Has_Full_Data(string subFactionName)
         {
             var asuryani = KillTeam.FactionById(8);
+            asuryani.HasSubFactions.Should().BeTrue();
             
             AssertD66SubFaction(asuryani.SubFactions, subFactionName);
         }
@@ -100,6 +107,7 @@ namespace KTNameGenerator.Core.Tests
         public void Drukhari_Has_Full_Data(string subFactionName)
         {
             var drukhari = KillTeam.FactionById(9);
+            drukhari.HasSubFactions.Should().BeTrue();
             
             AssertD66SubFaction(drukhari.SubFactions, subFactionName);
         }
@@ -108,6 +116,7 @@ namespace KTNameGenerator.Core.Tests
         public void Harlequins_Has_Full_Data()
         {
             var harlequins = KillTeam.FactionById(10);
+            harlequins.HasSubFactions.Should().BeFalse();
             
             AssertD10Faction(harlequins);
         }
@@ -116,6 +125,7 @@ namespace KTNameGenerator.Core.Tests
         public void Necrons_Has_Full_Data()
         {
             var necrons = KillTeam.FactionById(11);
+            necrons.HasSubFactions.Should().BeFalse();
             
             AssertD66Faction(necrons);
         }
@@ -124,6 +134,7 @@ namespace KTNameGenerator.Core.Tests
         public void Orks_Has_Full_Data()
         {
             var orks = KillTeam.FactionById(12);
+            orks.HasSubFactions.Should().BeFalse();
             
             AssertD66Faction(orks);
         }
@@ -132,6 +143,7 @@ namespace KTNameGenerator.Core.Tests
         public void Tau_Has_Full_Data()
         {
             var tau = KillTeam.FactionById(13);
+            tau.HasSubFactions.Should().BeFalse();
             
             AssertD66Faction(tau);
         }
@@ -140,6 +152,7 @@ namespace KTNameGenerator.Core.Tests
         public void Tyranid_Has_Full_Data()
         {
             var nid = KillTeam.FactionById(14);
+            nid.HasSubFactions.Should().BeFalse();
             
             AssertD66Faction(nid);
         }
@@ -148,6 +161,7 @@ namespace KTNameGenerator.Core.Tests
         public void Genestealer_Cult_Has_Full_Data()
         {
             var genestealerCult = KillTeam.FactionById(15);
+            genestealerCult.HasSubFactions.Should().BeFalse();
             
             AssertD66Faction(genestealerCult);
         }
