@@ -1,0 +1,338 @@
+[
+    {
+        "id": 1,
+        "name": "Adeptus Astartes",
+        "generationType": "d10",
+        "concatenationType": "space",
+        "subfactions": [
+            {
+                "name": "Ultramarines",
+                "forenames": [
+                    "Marius", "Agnathio", "Ollonius", "Cato", "Titus", "Agies", "Gaius", "Andrus", "Marcus", "Cassius"
+                ],
+                "surnames": [
+                    "Chronus", "Tarentus", "Dysorius", "Cassus", "Acastian", "Varenus", "Apollon", "Aggennor", "Castus", "Poladrus"
+                ]
+            },
+            {
+                "name": "Imperial Fists",
+                "forenames": [
+                    "Lydus", "Darnath", "Lexandro", "Nereus", "Tylaeus", "Vorn", "Tor", "Boreas", "Jago", "Oreas"
+                ],
+                "surnames": [
+                    "Hagen", "Mirhen", "Garadon", "Lytanus", "Danithor", "Markov", "Mordelai", "Julan", "Darsway", "Lordann"
+                ]
+            },
+            {
+                "name": "Blood Angels",
+                "forenames": [
+                    "Amareus", "Erasmus", "Rafael", "Morlaco", "Leonid", "Faustian", "Donatelus", "Raelyn", "Nicodemus", "Furian"
+                ],
+                "surnames": [
+                    "Belarius", "Seraphan", "Moriar", "Raneil", "Castivar", "Arteros", "Redolpho", "Lorenso", "Amuto", "Rephas"
+                ]
+            },
+            {
+                "name": "Raven Guard",
+                "forenames": [
+                    "Aajx", "Kyrin", "Vykus", "Tryis", "Ordias", "Navaer", "Syras", "Aevar", "Reszan", "Vorkyl"
+                ],
+                "surnames": [
+                    "Kaed", "Solari", "Solaq", "Qeld", "Korvaedyn", "Vaanes", "Torvaec", "Klayde", "Moradus", "Ordaris"
+                ]
+            },
+            {
+                "name": "White Scars",
+                "forenames": [
+                    "Anagar", "Khajog", "Suberei", "Khoros", "Jaygor", "Seglei", "Jurgah", "Kaljyk", "Kulghu", "Saghari"
+                ],
+                "surnames": [
+                    "Gatughan", "Yesuberei", "Ghol", "Jaghol", "Kandakh", "Mologhai", "Ujumm", "Bhangleo", "J'ungah", "Aghulo"
+                ]
+            },
+            {
+                "name": "Iron Hands",
+                "forenames": [
+                    "Arrven", "Gorrloch", "Shorrgol", "Galorr", "Dorrghun", "Kaagos", "Barrgus", "Ghorrean", "Orros", "Gdolkin"
+                ],
+                "surnames": [
+                    "Feirros", "Graevarr", "Bannus", "Lydriik", "Terrek", "Korvaan", "Urloch", "Rauth", "Varrox", "Xeriis"
+                ]
+            },
+            {
+                "name": "Space Wolves",
+                "forenames":[
+                    "Gunnar", "Ulfrich", "Laars", "Sven", "Wulfgar", "Erik", "Dolf", "Leif", "Olaf", "Torrvald"
+                ],
+                "surnames": [
+                    "Ironaxe", "Icefang", "Orksbane", "the Red", "Wrymslayer", "Thunderhowl", "Stormstrider", "Stoneshield", "Trollbane", "Greymane"
+                ]
+            },
+            {
+                "name": "Salamanders",
+                "forenames": [
+                    "Dak'Lyr", "Sho'Tan", "Tsu'Gar", "Fugean", "Xavus", "Nubari", "Vorr'n", "Sholta", "Xa'Vor", "Leotrak"
+                ],
+                "surnames": [
+                    "K'Gosi", "Dallor", "Jurr", "Mir'Shan", "Shenn", "Ta'Phor", "Rhoshan", "Antanar", "Shal'Dar", "Gar'Dos"
+                ]
+            },
+            {
+                "name": "Dark Angels",
+                "forenames": [
+                    "Azkarael", "Zakeal", "Rhellion", "Zoreal", "Azathor", "Shoriel", "Nemator", "Ezekial", "Bethor", "Zadakial"
+                ],
+                "surnames": [
+                    "Zaborial", "Azdallon", "Zacahrus", "Astathor", "Seraphus", "Zanthor", "Kaelon", "Namaat", "Soriel", "Belian"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Grey Knights",
+        "generationType": "d10",
+        "concatenationType": "space",
+        "forenames": [
+            "Valdar", "Kaladour", "Pelenas", "Anval", "Drystan", "Garran", "Drako", "Caddon", "Arno", "Verdan"
+        ],
+        "surnames": [
+            "Mordrak", "Torvin", "Thule", "Varn", "Odran", "Gerontas", "Solor", "Cromm", "Kai", "Trevan"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Astra Militarun",
+        "generationType": "d66",
+        "concatenationType": "space",
+        "subfactions":[
+            {
+                "name": "Cadian",
+                "forenames": [
+                    "Jens", "Karsk", "Hekler", "Reeve", "Pavlo", "Hektor", "Nils", "Thenmann", "Kyser", "Erlen", "Raphe", "Creed", "Lasko", "Ackerman", "Mattias",
+                    "Mortens", "Dansk", "Feodor", "Tomas", "Kolson", "Vance", "Pask", "Niems", "Gryf", "Willem", "Sonnen", "Ekhter", "Farestein", "Dekker", "Graf",
+                    "Arvans", "Viers", "Kolm", "Bask", "Vesker", "Pavlo"
+                ]
+            },
+            {
+                "name": "Catachan",
+                "forenames": [
+                    "Gunnarsen", "Harker", "Grytt", "'Snake' Vandien", "Greiss", "Stryker", "Storm", "Lance", "'Crazy' Winters", "Cage", "Hammer", "Cobra",
+                    "'Hardhead' Jackson", "'Stonefist' Kage", "'Boos' Stranksky", "'Bomber' Johnson", "Jacksen", "Marshall", "'Fangs' Lorson", "'Cold-eye' McKay",
+                    "Wolf", "'Shiv' Frost", "Brent", "'Ironheart' McKillen", "'Killer' Crowe", "'Wildman' Weiss", "'Ice' Creek", "Dane", "Steeljaw", "Dranksky",
+                    "'Slim' Hasker", "Mason", "Hawks", "Axel", "Carver", "Payne"
+                ]
+            },
+            {
+                "name": "Valhallan",
+                "forenames": [
+                    "Vensk", "Skarrsen", "Chernov", "Dushenko", "Rynsk", "Gorska", "Varence", "Nyska", "Putran", "Dorff", "Tyvosk", "Polanski", "Drekoff", "Vorn",
+                    "Hapscheldt", "Olof", "Trevinska", "Schonnen", "Kleiss", "Borys", "Ivanek", "Smirnek", "Kuzentsev", "Vasilesnev", "Petravitch", "Skolov",
+                    "Fedorev", "Morazev", "Volko", "Lebesnev", "Egoryn", "Pavlek", "Kozlev", "Stepanovicz", "Nikoli", "Orlakev"
+                ]
+            },
+            {
+                "name": "Tallarn",
+                "forenames": [
+                    "Alem", "Hallain", "Laskair", "Nathal", "Altarem", "Mohal", "Dharem", "Hasman", "Sonnam", "Ushmet", "Shadnan", "Asphret", "Ushad", "Tal'hasen",
+                    "Ashmyr", "Shashlem", "Haseed", "Ushar", "Raheim", "Dassed", "Sahleim", "Alhret", "Khaleeth", "Eshmet", "Ul'shalem", "Talannar", "Al'phareim",
+                    "El'shan", "Khabir", "Khalym", "'Swiftrider'", "'Dunestrider'", "'Hawkseye'", "'Sand Devil'", "'the Mirage'", "'the Hunter"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Adeptus Mechanicus",
+        "generationType": "d66",
+        "concatenationType": "combine",
+        "forenames": [
+            "Sy-gex", "Tyr", "Dak", "Ar", "Kappie-Schoelendt", "Tyba", "Dorox", "Alb", "Zyto-Neumann", "Xios", "Kau", "Rho", "Delpha", "Chu", "Ix", "Neng-Pho",
+            "Bheta", "Zhu", "Lho", "Teppa-Nyxos", "Kor", "Dox", "Sek", "Gryphonne-Reductus", "Tov", "Eq", "Mu", "Rhy", "Dos", "Exitor-Dho", "Fel", "Actus", "Xor",
+            "Decima", "Rax", "Kas"
+        ],
+        "surnames": [
+            "-511", "-1111", "-XXVII", "-802", "-323/mk12", "-089", "-744", "-VII", "-18.1", "-656", "-IV", "-110", "-0.43.43", "-97/mk24", "-XIX", "-7", "-110100",
+            "-3.16", "-961.34254", "-MXV", "-99", "-2918", "-888.88", "-404", "-1010", "-0.44//K", "-745", "-66.75/mk98", "-1/1/2", "-99941", "-83.2", "-575",
+            "-79.09/5", "-668.2", "-1/5", "-666/2"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Heretic Astartes",
+        "generationType": "d10",
+        "concatenationType": "space",
+        "subfactions":[
+            {
+                "name": "Black Legion",
+                "fornames": [
+                    "Zekyr", "Dreccor", "Sovram", "Thallos", "Zagator", "Korthranus", "Drekva", "Thygmor", "Ashrok", "Azmodial"
+                ],
+                "surnames": [
+                    "Aximand", "the Vengeful", "Thrice-Cursed", "Korda", "the Black", "Daemonsblade", "Oraka", "Naxos", "the Mad", "Faithslayer"
+                ]
+            },
+            {
+                "name": "Alpha Legion",
+                "fornames": [
+                    "Kyphax", "Inigo", "Thkeln", "Sylas", "Armilus", "Sheed", "Eskyrx", "Jaego", "Askelitar", "Alpharius"
+                ],
+                "surnames": [
+                    "Sheyr", "Dynas", "Hertzor", "Ranko", "", "23-7", "Legion", "Phors", "Nul", ""
+                ]
+            },
+            {
+                "name": "Emperor's Children",
+                "fornames": [
+                    "Antinius", "Eidelitor", "Ilitoias", "Teloss", "Abdemis", "Fabian", "Julianis", "Abdelis", "Lycon", "Xiander"
+                ],
+                "surnames": [
+                    "Sellion", "Thest", "Atonian", "Vessatar", "Bericosian", "Xandassus", "Tresell", "Vastorius", "Kanasiar", "the Perfect"
+                ]
+            },
+            {
+                "name": "World Eaters",
+                "fornames": [
+                    "Khargos", "Drakh", "Ashkal", "Gharrax", "Khorgor", "Sorkhos", "Aggravax", "Ashkorh", "Laraskh", "Khaen"
+                ],
+                "surnames": [
+                    "Skullfiend", "the Reaper", "Khorr", "the Butcher", "the Furious", "Slaughterborn", "Foe Ripper", "the Destroyer", "the Hound", "Thaxxos"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Death Guard",
+        "generationType":"d10",
+        "concatenationType":"space",
+        "forenames": [
+            "Gurloch", "Suppurax", "Golchor", "Festamus", "Rancidius", "Mulgh", "Shurgholgh", "Bubox", "Pestus", "Malignus"
+        ],
+        "surnames": [
+            "Urghe", "Volghor", "Grulgus", "the Pestilent", "the Reeking", "the Curdled", "Glouch", "Muttermould", "Thrax", "Trudge"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Thousand Sons",
+        "generationType": "d10",
+        "concatenationType":"space",
+        "forenames": [
+            "Phosis", "Amonhep", "Basteq", "Apophitar", "Thotek", "Kalophis", "Phael", "Thotmas", "Imhoden", "Ankhu"
+        ],
+        "surnames":[
+            "T'Kor", "Basth", "Takar", "Kallisar", "Rhan", "P'Tra", "Manahkmor", "Shen", "Apophontar", "H'Kett"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Asuryani",
+        "generationType": "d66",
+        "concatenationType":"space",
+        "subfactions":[
+            {
+                "name": "Female",
+                "forenames": [
+                    "Tenrith", "Justune", "Aleerith", "Yrlla", "Aileer", "Caslith", "Tai'shar", "Jair", "Luirth", "Aleera", "Phyllistra", "Myrnoth",
+                    "Fyrram", "Ishylla", "Tishriel", "Aydona", "Galanta", "Ylleth", "Giladrea", "Osinell", "Glenoighi", "Ishta", "Yvraine", "Intrisiel",
+                    "Torc", "Anesh", "Kalistri", "Alee", "Altanish", "Gwyth", "Tyrelli", "Kaithe", "Galrethi", "Noithi", "Braesil", "Meari"
+                ],
+                "surnames": [
+                    "the Fireheart", "Kyldroth", "Tridehla", "Who Walks Alone", "of the Flowing Spirits", "Iydoth", "Brylliel", "Biel-rith", "", "Iyadolath",
+                    "Last of the House of the Ayandi", "the Melancholy", "Llacharni", "the Huntress", "Aryimelli", "Bringer of Azure Death", "Umachuli",
+                    "Shelwe-hann", "Serenti", "Ullamar", "Dystari", "Ciaradh", "Iyadari", "Flethal", "the  Whisper of Death", "Hanndroth", "Sheersom", "Cegodari",
+                    "Ullathani", "Corsikanni", "Yn Farwolloch", "Indomi", "Saim-Ingrelli", "Ysbwrieli", "Morai-fen", "Undomniel"
+                ]
+            },
+            {
+                "name": "Male",
+                "forenames":[
+                    "Fachean", "Tarvaril", "Fanani", "Yrmnoch", "Barahir", "Eldrion", "Dis'ar", "Eldos", "Kinshar", "Rhidhal", "Athairnos", "Earandil", "Siriolas",
+                    "Bahtaam", "Fian", "Eldroch", "Lorinth", "Illisar", "Ealion", "Elronhir", "Tamishar", "Arenal", "Iradil", "Maur", "Requiel", "Lann", "Yrule",
+                    "Ra'thar", "Las'har", "Arision", "Ingfhar", "Senn", "Hal'thar", "Yrion", "Silgar", "Konrith"
+                ],
+                "surnames":[
+                    "Son of Choheria", "Finarfin", "Eldrion", "the Unyielding Fire", "Glaermril", "Arronas", "Glowach", "the Uncompromising", "of the Noble House of Picarothi",
+                    "Enbrondil", "Lladronoth", "Bechareth", "Ceifulgaithann", "Undroll", "Caman", "Toir", "Scion of Rhidmar", "the Wanderer", "of the Clan Randras", "Llmaea-fen",
+                    "Rillietar", "Elarique of Alaitoc", "Sydarus Starstrider", "the Implacable", "Ulthos", "Sharnal", "the Deathly Eloquent", "Born of Twilight", "of the Tower of Stars",
+                    "Shelwe-nin", "the Undaunted", "Rhianthari", "Eldroneth", "Trithjain", "the Rising Star", "Bhanlhar"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Drukhari",
+        "generationType": "d66",
+        "concatenationType":"space",
+        "subfactions":[
+            {
+                "name": "Kabalite",
+                "forenames": [],
+                "surnames": []
+            },
+            {
+                "name": "Wych Cult",
+                "forenames": [],
+                "surnames": []
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Harlequins",
+        "generationType": "d10",
+        "concatenationType": "space",
+        "forenames": [
+            "The Sun", "The Star", "The Shadow", "The Void", "The Sky", "The Redtide", "The Moon", "The Highborn", "The Leering", "The Bladed"
+        ],
+        "surnames": [
+            "King", "Queen", "Prince", "Knave", "Witch", "Judge", "Executioner", "Seer", "Ghoul", "Crone"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Necrons",
+        "generationType": "d66",
+        "concatenationType":"space",
+        "forenames":[
+            
+        ],
+        "surnames": [
+
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Orks",
+        "generationType": "d66",
+        "concatenationType": "space",
+        "forenames": [],
+        "surnames": []
+    },
+    {
+        "id": 13,
+        "name": "T'au",
+        "generationType": "d66",
+        "concatenationType":"combine",
+        "forenames":[],
+        "surnames":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
+    },
+    {
+        "id": 14,
+        "name": "Tyranid",
+        "generationType": "d66",
+        "concatenationType": "space",
+        "forenames": [],
+        "surnames": []
+    },
+    {
+        "id": 15,
+        "name": "Genestealer Cult",
+        "generationType": "d66",
+        "concatenationType": "space",
+        "forenames":[],
+        "surnames": []
+    }
+]
