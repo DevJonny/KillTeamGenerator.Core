@@ -9,7 +9,7 @@
         <PackageLicenseUrl>https://raw.githubusercontent.com/DevJonny/KillTeamGenerator.Core/master/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/DevJonny/KillTeamGenerator.Core</RepositoryUrl>
         <RepositoryType>GitHub</RepositoryType>
-        <PackageVersion>1.0.2</PackageVersion>
+        <PackageVersion>1.0.5</PackageVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

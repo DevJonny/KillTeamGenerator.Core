@@ -12,7 +12,7 @@ namespace KTNameGenerator.Core.Model
         public SubFaction[] SubFactions { get; set; }
         public string[] Forenames { get; set; }
         public string[] Surnames { get; set; }
-        public bool HasSubfactions => !(SubFactions is null) || !SubFactions.Any();
+        public bool HasSubFactions => !(SubFactions is null) && SubFactions.Any();
 
         public string GenerateName(int? subFactionId)
         {
