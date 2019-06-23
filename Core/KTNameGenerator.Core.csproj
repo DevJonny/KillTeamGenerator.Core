@@ -26,15 +26,4 @@
         </None>
     </ItemGroup>
 
-    <ItemGroup>
-        <None Include="data.json">
-            <Pack>true</Pack>
-            <PackagePath>build</PackagePath>
-        </None>
-        <None Include="KTNameGenerator.Core.targets">
-            <Pack>true</Pack>
-            <PackagePath>build</PackagePath>
-        </None>
-    </ItemGroup>
-
 </Project>
