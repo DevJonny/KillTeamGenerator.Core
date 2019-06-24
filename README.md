@@ -4,7 +4,7 @@
 
 You can install the name generator using your favourite NuGet client. For example using the dotnet cli:
 
-`dotnet add package KTNameGenerator.Core --version 1.0.6`
+`dotnet add package KTNameGenerator.Core`
 
 ## Usage
 
