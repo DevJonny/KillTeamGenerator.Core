@@ -32,18 +32,26 @@ namespace KTNameGenerator.Core.Model
 
         private string generateD10Name(int? subFactionId)
         {
-            if (subFactionId is null)
-                return $"{Forenames[Dice.D10]} {Surnames[Dice.D10]}";
-            
-            var subFaction = SubFactions[subFactionId.Value];
-            var forename = subFaction.Forenames[Dice.D10];
+            return generateName(subFactionId, Dice.D10, Dice.D10);
+        }
+
+        private string generateD66Name(int? subFactionId)
+        {
+            return generateName(subFactionId, Dice.D6 * Dice.D6, Dice.D6 * Dice.D6);
+        }
+
+        private string generateName(int? subFactionId, int forenameValue, int surnameValue)
+        {
             var concatenation = ConcatenationType is ConcatenationType.Combine ? string.Empty : " ";
-            var surname = subFaction.Surnames[Dice.D10];
+
+            if (subFactionId is null)
+                return $"{Forenames[forenameValue]}{concatenation}{Surnames[surnameValue]}";
+
+            var subFaction = SubFactions[subFactionId.Value];
+            var forename = subFaction.Forenames[forenameValue];
+            var surname = subFaction.Surnames[surnameValue];
 
             return $"{forename}{concatenation}{surname}";
         }
-
-        private string generateD66Name(int? subFaction)
-            => $"{SubFactions[subFaction.Value].Forenames[Dice.D6 * Dice.D6]}";
     }
 }
