@@ -3,13 +3,13 @@ using KTNameGenerator.Core.Model;
 
 namespace KTNameGenerator.Core.Data
 {
-    public class FactionData
+    public static class FactionData
     {
         public static IEnumerable<Faction> Factions => new List<Faction>
         {
             new Faction
             {
-                Id = 1,
+                Type = FactionType.AdeptusAstartes,
                 Name = "Adeptus Astartes",
                 GenerationType = GenerationType.D10,
                 ConcatenationType = ConcatenationType.Space,
@@ -17,6 +17,7 @@ namespace KTNameGenerator.Core.Data
                 {
                     new SubFaction
                     {
+                        Type = SubFactionType.Ultramarines,
                         Name = "Ultramarines",
                         Forenames = new[]
                         {
@@ -30,6 +31,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.ImperialFists,
                         Name = "Imperial Fists",
                         Forenames = new[]
                         {
@@ -43,6 +45,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.BloodAngels,
                         Name = "Blood Angels",
                         Forenames = new[]
                         {
@@ -56,6 +59,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.RavenGuard,
                         Name = "Raven Guard",
                         Forenames = new[]
                         {
@@ -69,6 +73,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.WhiteScars,
                         Name = "White Scars",
                         Forenames = new[]
                         {
@@ -82,6 +87,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.IronHands,
                         Name = "Iron Hands",
                         Forenames = new[]
                         {
@@ -95,6 +101,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.SpaceWolves,
                         Name = "Space Wolves",
                         Forenames = new[]
                         {
@@ -108,6 +115,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.Salamanders,
                         Name = "Salamanders",
                         Forenames = new[]
                         {
@@ -121,6 +129,7 @@ namespace KTNameGenerator.Core.Data
 
                     new SubFaction
                     {
+                        Type = SubFactionType.DarkAngels,
                         Name = "Dark Angels",
                         Forenames = new[]
                         {
@@ -135,7 +144,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 2,
+                Type = FactionType.GreyKnights,
                 Name = "Grey Knights",
                 GenerationType = GenerationType.D10,
                 ConcatenationType = ConcatenationType.Space,
@@ -150,7 +159,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 3,
+                Type = FactionType.AstraMilitarum,
                 Name = "Astra Militarum",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
@@ -158,6 +167,7 @@ namespace KTNameGenerator.Core.Data
                 {
                     new SubFaction
                     {
+                        Type = SubFactionType.Cadian,
                         Name = "Cadian",
                         Forenames = new[]
                         {
@@ -169,6 +179,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.Catachan,
                         Name = "Catachan",
                         Forenames = new[]
                         {
@@ -181,6 +192,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.Valhallan,
                         Name = "Valhallan",
                         Forenames = new[]
                         {
@@ -192,6 +204,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.Tallarn,
                         Name = "Tallarn",
                         Forenames = new[]
                         {
@@ -205,7 +218,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 4,
+                Type = FactionType.AdeptusMechanicus,
                 Name = "Adeptus Mechanicus",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Combine,
@@ -224,7 +237,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 5,
+                Type = FactionType.HereticAstartes,
                 Name = "Heretic Astartes",
                 GenerationType = GenerationType.D10,
                 ConcatenationType = ConcatenationType.Space,
@@ -232,6 +245,7 @@ namespace KTNameGenerator.Core.Data
                 {
                     new SubFaction
                     {
+                        Type = SubFactionType.BlackLegion,
                         Name = "Black Legion",
                         Forenames = new[]
                         {
@@ -244,6 +258,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.AlphaLegion,
                         Name = "Alpha Legion",
                         Forenames = new[]
                         {
@@ -256,6 +271,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.EmperorsChildren,
                         Name = "Emperor's Children",
                         Forenames = new[]
                         {
@@ -268,6 +284,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.WorldEaters,
                         Name = "World Eaters",
                         Forenames = new[]
                         {
@@ -278,11 +295,11 @@ namespace KTNameGenerator.Core.Data
                             "Skullfiend", "the Reaper", "Khorr", "the Butcher", "the Furious", "Slaughterborn", "Foe Ripper", "the Destroyer", "the Hound", "Thaxxos"
                         }
                     }
-                },
+                }
             },
             new Faction
             {
-                Id = 6,
+                Type = FactionType.DeathGuard,
                 Name = "Death Guard",
                 GenerationType = GenerationType.D10,
                 ConcatenationType = ConcatenationType.Space,
@@ -297,7 +314,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 7,
+                Type = FactionType.ThousandSons,
                 Name = "Thousand Sons",
                 GenerationType = GenerationType.D10,
                 ConcatenationType = ConcatenationType.Space,
@@ -312,7 +329,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 8,
+                Type = FactionType.Asuryani,
                 Name = "Asuryani",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
@@ -320,6 +337,7 @@ namespace KTNameGenerator.Core.Data
                 {
                     new SubFaction
                     {
+                        Type = SubFactionType.AsuryaniFemale,
                         Name = "Female",
                         Forenames = new[]
                         {
@@ -337,6 +355,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.AsuryaniMale,
                         Name = "Male",
                         Forenames = new[]
                         {
@@ -356,7 +375,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 9,
+                Type = FactionType.Drukhari,
                 Name = "Drukhari",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
@@ -364,6 +383,7 @@ namespace KTNameGenerator.Core.Data
                 {
                     new SubFaction
                     {
+                        Type = SubFactionType.Kabalite,
                         Name = "Kabalite",
                         Forenames = new[]
                         {
@@ -381,6 +401,7 @@ namespace KTNameGenerator.Core.Data
                     },
                     new SubFaction
                     {
+                        Type = SubFactionType.WychCult,
                         Name = "Wych Cult",
                         Forenames = new[]
                         {
@@ -400,7 +421,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 10,
+                Type = FactionType.Harlequins,
                 Name = "Harlequins",
                 GenerationType = GenerationType.D10,
                 ConcatenationType = ConcatenationType.Space,
@@ -415,7 +436,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 11,
+                Type = FactionType.Necrons,
                 Name = "Necrons",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
@@ -435,7 +456,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 12,
+                Type = FactionType.Orks,
                 Name = "Orks",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
@@ -454,7 +475,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 13,
+                Type = FactionType.Tau,
                 Name = "T'au",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Combine,
@@ -468,7 +489,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 14,
+                Type = FactionType.Tyranid,
                 Name = "Tyranid",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
@@ -488,7 +509,7 @@ namespace KTNameGenerator.Core.Data
             },
             new Faction
             {
-                Id = 15,
+                Type = FactionType.GenestealerCult,
                 Name = "Genestealer Cult",
                 GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
