@@ -16,7 +16,12 @@ namespace KTNameGenerator.Core.Model
         public bool HasSubFactions => !(SubFactions is null) && SubFactions.Any();
 
         public SubFaction SubFactionByType(SubFactionType type) => SubFactions?.SingleOrDefault(f => f.Type == type);
-        
+
+        public string GenerateName(SubFactionType type)
+        {
+            return GenerateName((int) type);
+        }
+
         public string GenerateName(int? subFactionId)
         {
             switch (GenerationType)
