@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
+using KTNameGenerator.Core.Data;
 using KTNameGenerator.Core.Model;
 using Xunit;
 
@@ -10,16 +11,16 @@ namespace KTNameGenerator.Core.Tests
     public class DataTests
     {
         [Theory]
-        [InlineData("Ultramarines")]
-        [InlineData("Imperial Fists")]
-        [InlineData("Blood Angels")]
-        [InlineData("Raven Guard")]
-        [InlineData("White Scars")]
-        [InlineData("Iron Hands")]
-        [InlineData("Space Wolves")]
-        [InlineData("Salamanders")]
-        [InlineData("Dark Angels")]
-        public void Adeptus_Astartes_Has_Full_Data(string subFactionName)
+        [InlineData(SubFactionType.Ultramarines)]
+        [InlineData(SubFactionType.ImperialFists)]
+        [InlineData(SubFactionType.BloodAngels)]
+        [InlineData(SubFactionType.RavenGuard)]
+        [InlineData(SubFactionType.WhiteScars)]
+        [InlineData(SubFactionType.IronHands)]
+        [InlineData(SubFactionType.SpaceWolves)]
+        [InlineData(SubFactionType.Salamanders)]
+        [InlineData(SubFactionType.DarkAngels)]
+        public void Adeptus_Astartes_Has_Full_Data(SubFactionType subFactionName)
         {
             var adeptusAstartes = KillTeam.FactionById(1);
             adeptusAstartes.HasSubFactions.Should().BeTrue();
@@ -37,11 +38,11 @@ namespace KTNameGenerator.Core.Tests
         }
 
         [Theory]
-        [InlineData("Cadian")]
-        [InlineData("Catachan")]
-        [InlineData("Valhallan")]
-        [InlineData("Tallarn")]
-        public void Astra_Militarum_Has_Full_Data(string subFactionName)
+        [InlineData(SubFactionType.Cadian)]
+        [InlineData(SubFactionType.Catachan)]
+        [InlineData(SubFactionType.Valhallan)]
+        [InlineData(SubFactionType.Tallarn)]
+        public void Astra_Militarum_Has_Full_Data(SubFactionType subFactionName)
         {
             var astraMil = KillTeam.FactionById(3);
             astraMil.HasSubFactions.Should().BeTrue();
@@ -60,11 +61,11 @@ namespace KTNameGenerator.Core.Tests
         }
 
         [Theory]
-        [InlineData("Black Legion")]
-        [InlineData("Alpha Legion")]
-        [InlineData("Emperor's Children")]
-        [InlineData("World Eaters")]
-        public void Heretic_Astartes_Has_Full_Data(string subFactionName)
+        [InlineData(SubFactionType.BlackLegion)]
+        [InlineData(SubFactionType.AlphaLegion)]
+        [InlineData(SubFactionType.EmperorsChildren)]
+        [InlineData(SubFactionType.WorldEaters)]
+        public void Heretic_Astartes_Has_Full_Data(SubFactionType subFactionName)
         {
             var hereticAstartes = KillTeam.FactionById(5);
             hereticAstartes.HasSubFactions.Should().BeTrue();
@@ -91,20 +92,20 @@ namespace KTNameGenerator.Core.Tests
         }
 
         [Theory]
-        [InlineData("Female")]
-        [InlineData("Male")]
-        public void Asuryani_Has_Full_Data(string subFactionName)
+        [InlineData(SubFactionType.AsuryaniFemale)]
+        [InlineData(SubFactionType.AsuryaniMale)]
+        public void Asuryani_Has_Full_Data(SubFactionType subFactionType)
         {
             var asuryani = KillTeam.FactionById(8);
             asuryani.HasSubFactions.Should().BeTrue();
             
-            AssertD66SubFaction(asuryani.SubFactions, subFactionName);
+            AssertD66SubFaction(asuryani.SubFactions, subFactionType);
         }
 
         [Theory]
-        [InlineData("Kabalite")]
-        [InlineData("Wych Cult")]
-        public void Drukhari_Has_Full_Data(string subFactionName)
+        [InlineData(SubFactionType.Kabalite)]
+        [InlineData(SubFactionType.WychCult)]
+        public void Drukhari_Has_Full_Data(SubFactionType subFactionName)
         {
             var drukhari = KillTeam.FactionById(9);
             drukhari.HasSubFactions.Should().BeTrue();
@@ -165,6 +166,59 @@ namespace KTNameGenerator.Core.Tests
             
             AssertD66Faction(genestealerCult);
         }
+
+        [Theory]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.Ultramarines)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.ImperialFists)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.BloodAngels)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.RavenGuard)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.WhiteScars)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.IronHands)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.SpaceWolves)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.Salamanders)]
+        [InlineData(FactionType.AdeptusAstartes, SubFactionType.DarkAngels)]
+        [InlineData(FactionType.AstraMilitarum, SubFactionType.Cadian)]
+        [InlineData(FactionType.AstraMilitarum, SubFactionType.Catachan)]
+        [InlineData(FactionType.AstraMilitarum, SubFactionType.Valhallan)]
+        [InlineData(FactionType.AstraMilitarum, SubFactionType.Tallarn)]
+        [InlineData(FactionType.HereticAstartes, SubFactionType.BlackLegion)]
+        [InlineData(FactionType.HereticAstartes, SubFactionType.AlphaLegion)]
+        [InlineData(FactionType.HereticAstartes, SubFactionType.EmperorsChildren)]
+        [InlineData(FactionType.HereticAstartes, SubFactionType.WorldEaters)]
+        [InlineData(FactionType.Asuryani, SubFactionType.AsuryaniFemale)]
+        [InlineData(FactionType.Asuryani, SubFactionType.AsuryaniMale)]
+        [InlineData(FactionType.Drukhari, SubFactionType.Kabalite)]
+        [InlineData(FactionType.Drukhari, SubFactionType.WychCult)]
+        public void Thousand_Name_Generate_Correctly_For_Sub_Factions(FactionType type, SubFactionType subFactionType)
+        {
+            for (var i = 0; i < 1000; i++)
+            {
+                Action generate = () => KillTeam.FactionByType(type).GenerateName(subFactionType);
+                
+                generate.Should().NotThrow();
+            }
+        }
+        
+        [Theory]
+        [InlineData(FactionType.GreyKnights)]
+        [InlineData(FactionType.AdeptusMechanicus)]
+        [InlineData(FactionType.DeathGuard)]
+        [InlineData(FactionType.ThousandSons)]
+        [InlineData(FactionType.Harlequins)]
+        [InlineData(FactionType.Necrons)]
+        [InlineData(FactionType.Orks)]
+        [InlineData(FactionType.Tau)]
+        [InlineData(FactionType.Tyranid)]
+        [InlineData(FactionType.GenestealerCult)]
+        public void Thousand_Name_Generate_Correctly_For_Factions(FactionType type)
+        {
+            for (var i = 0; i < 1000; i++)
+            {
+                Action generate = () => KillTeam.FactionByType(type).GenerateName();
+                
+                generate.Should().NotThrow();
+            }
+        }
         
         private static void AssertD66Faction(Faction faction)
         {
@@ -172,9 +226,9 @@ namespace KTNameGenerator.Core.Tests
             faction.Surnames.Length.Should().Be(36);
         }
 
-        private static void AssertD66SubFaction(IEnumerable<SubFaction> subFactions, string subFactionName)
+        private static void AssertD66SubFaction(IEnumerable<SubFaction> subFactions, SubFactionType subFactionType)
         {
-            var subFaction = subFactions.SingleOrDefault(f => f.Name.Equals(subFactionName, StringComparison.InvariantCultureIgnoreCase));            
+            var subFaction = subFactions.SingleOrDefault(s => s.Type == subFactionType);            
             subFaction.Should().NotBeNull();
             subFaction.Forenames.Length.Should().Be(36);
             subFaction.Surnames.Length.Should().Be(36);
@@ -186,9 +240,9 @@ namespace KTNameGenerator.Core.Tests
             faction.Surnames.Length.Should().Be(10);
         }
 
-        private static void AssertD10SubFaction(IEnumerable<SubFaction> subFactions, string subFactionName)
+        private static void AssertD10SubFaction(IEnumerable<SubFaction> subFactions, SubFactionType subFactionType)
         {
-            var subFaction = subFactions.SingleOrDefault(f => f.Name.Equals(subFactionName, StringComparison.InvariantCultureIgnoreCase));
+            var subFaction = subFactions.SingleOrDefault(s => s.Type == subFactionType);
             
             subFaction.Should().NotBeNull();
 
