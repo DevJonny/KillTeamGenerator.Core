@@ -22,7 +22,7 @@ namespace KTNameGenerator.Core.Model
             return GenerateName((int) type);
         }
 
-        public string GenerateName(int? subFactionId)
+        public string GenerateName(int? subFactionId = null)
         {
             switch (GenerationType)
             {
@@ -42,7 +42,7 @@ namespace KTNameGenerator.Core.Model
 
         private string generateD66Name(int? subFactionId)
         {
-            return generateName(subFactionId, Dice.D6 * Dice.D6, Dice.D6 * Dice.D6);
+            return generateName(subFactionId, Dice.D66, Dice.D66);
         }
 
         private string generateName(int? subFactionId, int forenameValue, int surnameValue)
