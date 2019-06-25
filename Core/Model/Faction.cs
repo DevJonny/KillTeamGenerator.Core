@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using KTNameGenerator.Core.Data;
 
@@ -17,14 +18,26 @@ namespace KTNameGenerator.Core.Model
 
         public SubFaction SubFactionByType(SubFactionType type) => SubFactions?.SingleOrDefault(f => f.Type == type);
 
-        public string GenerateName(SubFactionType? subFactionId = null)
+        public IEnumerable<string> GenerateNames(int numberOfNames, SubFactionType? subFactionType = null)
+        {
+            var names = new string[numberOfNames];
+            
+            for (int i = 0; i < numberOfNames; i++)
+            {
+                names[i] = GenerateName(subFactionType);
+            }
+
+            return names;
+        }
+        
+        public string GenerateName(SubFactionType? subFactionType = null)
         {
             switch (GenerationType)
             {
                 case GenerationType.D10:
-                    return generateD10Name(subFactionId);
+                    return generateD10Name(subFactionType);
                 case GenerationType.D66:
-                    return generateD66Name(subFactionId);
+                    return generateD66Name(subFactionType);
                 default:
                     throw new ArgumentOutOfRangeException($"Invalid {nameof(GenerationType)} was specified!");
             }
