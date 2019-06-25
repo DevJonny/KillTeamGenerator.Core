@@ -17,12 +17,7 @@ namespace KTNameGenerator.Core.Model
 
         public SubFaction SubFactionByType(SubFactionType type) => SubFactions?.SingleOrDefault(f => f.Type == type);
 
-        public string GenerateName(SubFactionType type)
-        {
-            return GenerateName((int) type);
-        }
-
-        public string GenerateName(int? subFactionId = null)
+        public string GenerateName(SubFactionType? subFactionId = null)
         {
             switch (GenerationType)
             {
@@ -35,24 +30,24 @@ namespace KTNameGenerator.Core.Model
             }
         }
 
-        private string generateD10Name(int? subFactionId)
+        private string generateD10Name(SubFactionType? subFactionType)
         {
-            return generateName(subFactionId, Dice.D10, Dice.D10);
+            return generateName(subFactionType, Dice.D10, Dice.D10);
         }
 
-        private string generateD66Name(int? subFactionId)
+        private string generateD66Name(SubFactionType? subFactionType)
         {
-            return generateName(subFactionId, Dice.D66, Dice.D66);
+            return generateName(subFactionType, Dice.D66, Dice.D66);
         }
 
-        private string generateName(int? subFactionId, int forenameValue, int surnameValue)
+        private string generateName(SubFactionType? subFactionType, int forenameValue, int surnameValue)
         {
             var concatenation = ConcatenationType is ConcatenationType.Combine ? string.Empty : " ";
 
-            if (subFactionId is null)
+            if (subFactionType is null)
                 return $"{Forenames[forenameValue]}{concatenation}{Surnames[surnameValue]}";
 
-            var subFaction = SubFactions[subFactionId.Value];
+            var subFaction = SubFactions.Single(sf => sf.Type == subFactionType);
             var forename = subFaction.Forenames[forenameValue];
             var surname = subFaction.Surnames[surnameValue];
 

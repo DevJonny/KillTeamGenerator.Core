@@ -214,7 +214,7 @@ namespace KTNameGenerator.Core.Tests
         {
             for (var i = 0; i < 1000; i++)
             {
-                Action generate = () => KillTeam.FactionByType(type).GenerateName();
+                Action generate = () => KillTeam.FactionByType(type).GenerateName(null);
                 
                 generate.Should().NotThrow();
             }
