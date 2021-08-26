@@ -1,6 +1,6 @@
-using KTNameGenerator.Core.Data;
+using KillTeamNameGenerator.Core.Data;
 
-namespace KTNameGenerator.Core.Model
+namespace KillTeamNameGenerator.Core.Model
 {
     public class SubFaction
     {

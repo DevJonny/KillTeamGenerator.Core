@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>Kill Team Name Generator Core</Title>
         <Authors>DevJonny</Authors>
@@ -10,6 +10,9 @@
         <RepositoryUrl>https://github.com/DevJonny/KillTeamGenerator.Core</RepositoryUrl>
         <RepositoryType>GitHub</RepositoryType>
         <PackageVersion>1.0.9</PackageVersion>
+        <AssemblyName>KillTeamNameGenerator.Core</AssemblyName>
+        <RootNamespace>KillTeamNameGenerator.Core</RootNamespace>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

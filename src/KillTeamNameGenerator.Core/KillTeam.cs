@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using KTNameGenerator.Core.Data;
-using KTNameGenerator.Core.Model;
+using KillTeamNameGenerator.Core.Data;
+using KillTeamNameGenerator.Core.Model;
 
-namespace KTNameGenerator.Core
+namespace KillTeamNameGenerator.Core
 {
     public static class KillTeam
     {

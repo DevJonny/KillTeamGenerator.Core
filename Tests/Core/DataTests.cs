@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using KTNameGenerator.Core.Data;
-using KTNameGenerator.Core.Model;
+using KTNameGenerator.Core;
+using KTNameGenerator.Data;
+using KTNameGenerator.Model;
 using Xunit;
 
-namespace KTNameGenerator.Core.Tests
+namespace KTNameGenerator.Tests.Core
 {
     public class DataTests
     {

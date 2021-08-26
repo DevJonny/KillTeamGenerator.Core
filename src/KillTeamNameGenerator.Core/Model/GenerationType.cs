@@ -1,4 +1,4 @@
-namespace KTNameGenerator.Core.Model
+namespace KillTeamNameGenerator.Core.Model
 {
     public enum GenerationType
     {

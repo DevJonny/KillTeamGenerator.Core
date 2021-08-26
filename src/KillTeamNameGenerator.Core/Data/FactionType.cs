@@ -1,4 +1,4 @@
-namespace KTNameGenerator.Core.Data
+namespace KillTeamNameGenerator.Core.Data
 {
     public enum FactionType
     {

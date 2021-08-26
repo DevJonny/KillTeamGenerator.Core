@@ -1,6 +1,6 @@
 using System;
 
-namespace KTNameGenerator.Core.Model
+namespace KillTeamNameGenerator.Core.Model
 {
     public class Dice
     {

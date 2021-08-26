@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using KTNameGenerator.Core.Model;
+using KillTeamNameGenerator.Core.Model;
 
-namespace KTNameGenerator.Core.Data
+namespace KillTeamNameGenerator.Core.Data
 {
     public static class FactionData
     {

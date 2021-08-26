@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using KTNameGenerator.Core.Data;
+using KillTeamNameGenerator.Core.Data;
 
-namespace KTNameGenerator.Core.Model
+namespace KillTeamNameGenerator.Core.Model
 {
     public class Faction
     {
