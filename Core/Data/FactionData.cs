@@ -146,15 +146,21 @@ namespace KTNameGenerator.Core.Data
             {
                 Type = FactionType.GreyKnights,
                 Name = "Grey Knights",
-                GenerationType = GenerationType.D10,
+                GenerationType = GenerationType.D66,
                 ConcatenationType = ConcatenationType.Space,
                 Forenames = new[]
                 {
-                    "Valdar", "Kaladour", "Pelenas", "Anval", "Drystan", "Garran", "Drako", "Caddon", "Arno", "Verdan"
+                    "Alaric","Anval","Ahakim","Dokelus","Blaris","Icanus","Martesias","Galan","Retius","Jarrius",
+                    "Cyntanus","Pellastis","Axatinos","Garran","Vitennias","Xeridon","Jakaton","Jaric","Caddon",
+                    "Aldrios","Beliaros","Kardoch","Astokar","Galarr","Xerikim","Archaddeus","Medemeion","Cortane",
+                    "Janutrius","Furoza","Drystan","Ortus","Lushian","Elrin","Arion","Valdar"
                 },
                 Surnames = new[]
                 {
-                    "Mordrak", "Torvin", "Thule", "Varn", "Odran", "Gerontas", "Solor", "Cromm", "Kai", "Trevan"
+                    "Geronitan","Vortimer","Ignatius","Issad","Edeon","Neodan","Phoros","Zaebus","Thawn","Nedth",
+                    "Gruila","Tekios","Thamare","Alegssus","Esdrios","Thule","Simedes","Arelis","Ortyrian","Akantar",
+                    "Cordacus","Massius","Vibova","Tydes","Elgon","Cybaddas","Adantor","Sorak","Invio","Kai","Solor",
+                    "Varn","Trevan","Morretus","Cybasi","Santon"
                 }
             },
             new Faction
