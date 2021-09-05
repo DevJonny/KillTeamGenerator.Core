@@ -3,6 +3,17 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>ktname</ToolCommandName>
+        <PackageOutputPath>../../artifacts</PackageOutputPath>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Spectre.Console" Version="0.41.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\KillTeamNameGenerator.Core\KillTeamNameGenerator.Core.csproj" />
+    </ItemGroup>
 
 </Project>

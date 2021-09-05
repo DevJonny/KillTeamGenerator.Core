@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using KTNameGenerator.Core;
-using KTNameGenerator.Data;
-using KTNameGenerator.Model;
+using KillTeamNameGenerator.Core;
+using KillTeamNameGenerator.Core.Data;
+using KillTeamNameGenerator.Core.Model;
 using Xunit;
 
 namespace KTNameGenerator.Tests.Core
